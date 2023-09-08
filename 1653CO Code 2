@@ -1,0 +1,2946 @@
+campaignTrail_temp.cyoa = true
+
+cyoAdventure = function (a) { 
+    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+    if (ans == 3057) {
+        campaignTrail_temp.question_number=19
+    }
+    else if (ans == 3059 || ans== 3060) 
+    {
+        campaignTrail_temp.question_number=20
+    }
+    else 
+    {
+        return false
+    }
+}
+
+let e = campaignTrail_temp;
+
+campaignTrail_temp.questions_json = [
+    {
+        "model": "campaign_trail.question",
+        "pk": 401,
+        "fields": {
+            "priority": 0,
+            "description": "January 1653, England's fields, rivers and rolling hills were dyed with the blood of its people, yet the atmosphere in London was the liveliest it had been in a decade. Charles I took his last walk through his banqueting house, the man, no longer a king, gazed to the familiar heavens above and felt at peace.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 402,
+        "fields": {
+            "priority": 1,
+            "description": "In the absence of an absolute monarch the steering of the ship of government has been fought over by the two “fathers of the Commonwealth”: Oliver Cromwell leader of the Grandees and John Pym leading an Independent faction. Fierce debates erupted in Parliament and physical confrontation became commonplace.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 403,
+        "fields": {
+            "priority": 2,
+            "description": "The Royal Palace of Whitehall became the base of Republican governance as the Roundhead generals and political leaders descended on the capital needed a place to live. Room and even bed sharing was a regular occurrence and in the crowded halls, plots and schemes flourished.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 404,
+        "fields": {
+            "priority": 2,
+            "description": "To break the political deadlock in Westminster Cromwell announced a new election of its members, hoping that his influence with the gentry would allow him to root out his rivals, especially John Pym.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 405,
+        "fields": {
+            "priority": 2,
+            "description": "As you walk across the frozen Thames a boy calls your name and runs to impart the news, your cotton trading must cease as your inability to pay off your debts has allowed those you owe to cease your collateral. You turn back to head to the East End to impart the news to your wife.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 406,
+        "fields": {
+            "priority": 2,
+            "description": "In your frustration you are encouraged by Everard to pick up the quill and spread your revelations of the corruption of city life across London. At the start of your first pamphlet, The Mystery of God, Concerning the Whole Creation and Mankind, you chose to dedicate your writings to…",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 407,
+        "fields": {
+            "priority": 2,
+            "description": "As your pamphlets begin to gain the attention of aggrieved Londoners you set upon a great work that will surmise your political philosophy and set you on a course of radical social experimentation.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 408,
+        "fields": {
+            "priority": 2,
+            "description": "No longer having to toil in your traders office you now have more freedom during the day to use your time as you see fit.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 409,
+        "fields": {
+            "priority": 2,
+            "description": "In a small hazefilled Inn located in the East End a crowd of the poor and unemployed have gathered to  listen to your plans of colonising the wasteland of England, and set up a commune of equals. The final decision to make is the location of where the first soil will be broken in your search for a new way of life.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 410,
+        "fields": {
+            "priority": 2,
+            "description": "The final slates are placed upon your new home as the initial stage of setting up your colony is completed. As you set yourself down at your desk you start to write a declaration of your intent as Diggers and what you intend to achieve upon the land and across the Commonwealth.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 411,
+        "fields": {
+            "priority": 2,
+            "description": "As your actions have inspired other poor and downtrodden people to start communes on wastelands across the Commonwealth, the rich and powerful have begun to keep a watchful eye over the affairs of your community. You are first made aware of this development when the leader of the New Model Army Thomas Fairfax sends you a letter inquiring about what you aim to achieve with your commune.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 412,
+        "fields": {
+            "priority": 2,
+            "description": "Your correspondence with Fairfax continues until one of the letters is published by a prominent Grandee politician, outraged by the cordial tone between a noble general and a dangerous radical. The poet Andrew Marvell publishes an open letter to Fairfax calling for him to denounce you and your beliefs through a story of how your colonies will lead to “the very world inverting upon itself”.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 413,
+        "fields": {
+            "priority": 2,
+            "description": "As the new parliament has proven unable to reverse the economic downturn of the Civil War the political movement that inspired your own: The Levellers have begun to draw vast crowds upon Hampstead Heath. Their ability to influence Parliament through its mutinies and protests have made them popular with many, even with some inside your commune.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 414,
+        "fields": {
+            "priority": 2,
+            "description": "“<b> FIRE! FIRE! HELP!</b>” you snap out of bed and rush to your door. The smell of soot makes your eyes stream into your face and once you wipe the tears from your face you are greeted by a tragic scene, your store house and stables are ablaze. The agitating of the local gentry has caused a mob of locals to fall into a frenzy and attack your peaceful commune.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 415,
+        "fields": {
+            "priority": 2,
+            "description": "The nation that has been restless for now stands still for the first time since the regicide. The Lord Protect Oliver Cromwell has been assassinated by his own men in Ireland and the Leader of the Council of State John Pym has died suddenly in his sleep. The Commonwealth once again has a need for a leader but the question of who will take up the mantle seems even more difficult to answer.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 416,
+        "fields": {
+            "priority": 2,
+            "description": "Seizing the initiative the generals Holles and Moncke have raised their forces in Manchester and have begun to march towards Parliament. Announcing that their intention is to implement Thomas Fairfax as Lord Protector and roll back the anti-aristocracy legislation of the New Parliament.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 417,
+        "fields": {
+            "priority": 2,
+            "description": "Parliament has been consumed with panic as it lacks the leadership to prevent the oncoming coup. However, when a letter is published by the Levellers that shows that it is the intention of the plotters: Holles, Moncke and Fairfax to restore the Stuart Monarchy the General Lambert raises troops in London and takes parliament before the army backing Fairfax crosses the Trent.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 418,
+        "fields": {
+            "priority": 2,
+            "description": "As chaos envelops the Commonwealth in the wake of the death of the fathers of the nation you begin to publish your greatest piece of political writing to date. “The Law of Freedom in a Platform” is the most detailed account of your vision for the commonwealth which you finish with emphasis upon…",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 419,
+        "fields": {
+            "priority": 2,
+            "description": "Following the sudden collapse of the Cromwellian regime the controversial policies of his government are being reconsidered. A total ban of catholic practices in Ireland has led to the suffering and death of many Irish commoners as a leader of a dissident religious movement your word on the subject of religious tolerance could prove influential.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 420,
+        "fields": {
+            "priority": 2,
+            "description": "Amidst the previous few volitile weeks you have noticed a turn in Everard’s spirits, no longer do he have the same conviction in your project. Urged by the members of your commune you speak to him directly, immediatley he concedes that he now beleives your project is doomed if you stay in Britain and that he longs to be free of this cruel place.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 421,
+        "fields": {
+            "priority": 2,
+            "description": "Amidst the previous few volitile weeks you have noticed a turn in Everard’s spirits, no longer do he have the same conviction in your project. Urged by the members of your commune you speak to him directly, immediatley he concedes that he now beleives your project is doomed if you stay in Britain and that he longs to be free of this cruel place.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 422,
+        "fields": {
+            "priority": 2,
+            "description": "Expanding farms",
+            "likelihood": 1
+        }
+    }
+]
+
+campaignTrail_temp.answers_json = [
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3001,
+        "fields": {
+            "question": 401,
+            "description": "With a clean swing of the axe the Pharaoh's reign was ended. Then the people of England were as the Jews of Moses' time, searching for their promised land in the desert of opportunity."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3002,
+        "fields": {
+            "question": 401,
+            "description": "A collective gasp, a scattered groan. Although the dead king’s power had been detested many felt comfort in the monarchy, without it many felt uneasy. The promise of the future was great but the road ahead was treacherous."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3003,
+        "fields": {
+            "question": 402,
+            "description": "Pym, as the most influential of the Five Members arrested in 1649 by Charles' men, was widely supported in the City of London. Although increasingly frail, his loyal faction worked tirelessly on his behalf to push reforms within the Commonwealth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3004,
+        "fields": {
+            "question": 402,
+            "description": "The lower chamber of Parliament was frequently packed as the formation of the state was fought over and the hatred of the regime seemed to be all that could be agreed upon and votes inevitably turned into brawls."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3005,
+        "fields": {
+            "question": 402,
+            "description": "Following his role in helping to found the New Model Army and crushing the Cavalier armies Oliver Cromwell took up the mantle of Lord Protector of the Commonwealth. He was guided by his radical puritanism and enforced his religious doctrine across Britain, seeking to crush any and all opposition."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3006,
+        "fields": {
+            "question": 403,
+            "description": "Those with the strongest convictions and sharpest arguments were the officers of the New Model Army as the democratisation of the army was expanded to the archaic political institutions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3007,
+        "fields": {
+            "question": 403,
+            "description": "Preachers of the puritanical faith sought to enforce their moralism on the leaders of the country with the hope that their example would affect the practices of the commoners across country."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3008,
+        "fields": {
+            "question": 403,
+            "description": "As frustrations with the grinding debates that took place in Parliament grew the corridors of Whitehall became the site of compromise as pragmatism between Cromwell's puritan generals and Pym's politicians."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3009,
+        "fields": {
+            "question": 403,
+            "description": "Comradery within the military high command meant that the needs and desires of the New Model Army were constantly fulfilled as other interests bickered and delayed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3010,
+        "fields": {
+            "question": 404,
+            "description": "Cromwell’s gamble collapsed almost instantly as his invasion of Ireland became bogged down and the requirement for increased levies soured his relations with the electorate."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3011,
+        "fields": {
+            "question": 404,
+            "description": "The Irish war proved unpopular but news of swift victory against the papist forces in Dublin was received warmly, minimising the fallout."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3012,
+        "fields": {
+            "question": 405,
+            "description": "Fury fills your heart, as the kindness you extended to others when you forgave debts of those in need has not been extended to yourself. The greed of others has once again led to the destruction of your life and now you must start anew."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3013,
+        "fields": {
+            "question": 405,
+            "description": "Although the news is devastating you understand that there is hardly a trader in London who is not in debt and that what has happened to you today happens to thousands of others every year."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3014,
+        "fields": {
+            "question": 405,
+            "description": "How is this happening? you've spent years of your life dedicated to this trade and now you have nothing. You have lost the respect of your peers and now all you want to do is escape this foul place."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3015,
+        "fields": {
+            "question": 406,
+            "description": "To the people of Lancashire"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3016,
+        "fields": {
+            "question": 406,
+            "description": "To the people of the Commonwealth"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3017,
+        "fields": {
+            "question": 406,
+            "description": "To the Creator Reason"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3018,
+        "fields": {
+            "question": 406,
+            "description": "To all mankind"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3019,
+        "fields": {
+            "question": 407,
+            "description": "And when the Son of man , was gone from the Apostles, his Spirit descended upon the Apostles and Brethren, as they were waiting at Jerusalem; and Rich men sold their Possessions, and gave part to the Poor; and no man said, That ought that he possessed was his own, for they had all things Common."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3020,
+        "fields": {
+            "question": 407,
+            "description": "Every single man, Male and Female, is a perfect Creature of himself; and the same Spirit that made the Earth, dwells in man to govern the Earth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3021,
+        "fields": {
+            "question": 407,
+            "description": "Jacob must rise, who is the universal Spirit of love and righteousness, that fills, and will fill all the Earth."
+        }
+    }, 
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3022,
+        "fields": {
+            "question": 407,
+            "description": "In the beginning of Time, the great Creator Reason, made the Earth to be a Common Treasury, to preserve Beasts, Birds, Fishes, and Man, the lord that was to govern this Creation; for Man had Domination given to him, over the Beasts, Birds, and Fishes; but not one word was spoken in the beginning, That one branch of mankind should rule over another."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3023,
+        "fields": {
+            "question": 408,
+            "description": "Spending long days walking the cobbled streets you stay deep in thought as the glimpses you catch of people's everyday lives help you to develop your radical critique."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3024,
+        "fields": {
+            "question": 408,
+            "description": "Writing is thirsty work and during your frequent meetings with Everard, who is just released from prison for his plans to sabotage Parliament, you start to dream of a better life, making up your own utopia."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3025,
+        "fields": {
+            "question": 409,
+            "description": "St George's Hill"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3026,
+        "fields": {
+            "question": 409,
+            "description": "Wellingborough"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3027,
+        "fields": {
+            "question": 409,
+            "description": "Iver"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3028,
+        "fields": {
+            "question": 409,
+            "description": "Norfolk Broads"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3029,
+        "fields": {
+            "question": 410,
+            "description": "When the wealth of the land was held in the Common Treasury the rights of the one were the rights of all others. And it is Reason that seeks to lead us back to the time when men were true, faithful and public beings."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3030,
+        "fields": {
+            "question": 410,
+            "description": "The word of the Creator Reason has been twisted and deformed throughout history. Whether by the Vatican's dogma or the Norman King’s Lust, those in power have always sought to control the word of Reason and hide its true meaning from the common man."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3031,
+        "fields": {
+            "question": 410,
+            "description": "The Root of the Tree of Tyranny is Self-preservation. Instead of seeking to ensure one's survival those in power seek to preserve the institutions that fuel their sin and cause the suffering that continues to branch out across the Commonwealth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3032,
+        "fields": {
+            "question": 410,
+            "description": "And our work is begun, the foundation of this spiritual building is laid, and the spreading of this one spirit in every son and daughter, and the lifting up the earth to be a common treasury will build the new Jerusalem across the whole Earth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3033,
+        "fields": {
+            "question": 411,
+            "description": "Fairfax is not a man of power like Cromwell or Pym, he is a man of God and although his methods of devotion are different to our own, appealing to his faith will ensure he takes kindly to our movement."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3034,
+        "fields": {
+            "question": 411,
+            "description": "The wastes of the Norman monarchy are despised by Puritans like Fairfax, by highlighting our self sufficiency and use of the land that was left uncultivated Fairfax will respect our work ethic."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3035,
+        "fields": {
+            "question": 411,
+            "description": "After the end of the Civil War it was known that soldiers of the New Model Army would enter the stately homes of the Royal Family and their allies in the gentry and steal their treasures for themselves. By associating this appropriation of the kingly artefacts with the appropriation of kingly laws  Fairfax can be taught the flaws of his government."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3036,
+        "fields": {
+            "question": 412,
+            "description": "Poets such as Marvell are reliant on aristocratic employment. To mitigate this attack I must frame it as an act of self-preservation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3037,
+        "fields": {
+            "question": 412,
+            "description": "Marvell has routinely made attacks on those he sees as sexually immoral, including those who sleep with people outside of their social rank. Highlighting this antiquated view will bring the people to our side and Fairfax will then shortly follow."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3038,
+        "fields": {
+            "question": 412,
+            "description": "Following the Execution of Charles Stuart it is widely known that Marvell was “deeply saddened” by the news. Maybe reprinting this confession will put him back in line."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3039,
+        "fields": {
+            "question": 412,
+            "description": "The claims that Marvell makes are obviously untrue, though I concede that we seek to radically improve the life of the common man, we do not seek the upheaval of society, merely a return to a time before the current indulgences and excesses."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3040,
+        "fields": {
+            "question": 413,
+            "description": "At last the party of Lilburne shows it has a use, I must write to the Leaders of the Leveller party congratulating them on their achievements and inform them of our mutual aims."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3041,
+        "fields": {
+            "question": 413,
+            "description": "Although they lack the understanding and principles of our movement the party has proven effective at organising the politically disaffected. Contact must be made as their influence may prove vital for the survival of our communes."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3042,
+        "fields": {
+            "question": 413,
+            "description": "We are the True Levellers of this land! This party is nothing more than the appropriation of freedom skewed in favour of the traders and workers who drove my business to bankruptcy. They are of no concern to our community."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3043,
+        "fields": {
+            "question": 414,
+            "description": "Nothing can be done, without Fairfax we cannot count on Parliamentary protection, we must rebuild and print as many pamphlets as possible to make our injustice heard."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3044,
+        "fields": {
+            "question": 414,
+            "description": "The barn and stable must be rebuilt with great urgency, but I will publish an open letter to Fairfax attributing his denunciation with the attack on our commune, hopefully inspiring him to issue an apology and grant us protection."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3045,
+        "fields": {
+            "question": 414,
+            "description": "If the commoners can be driven to mob our small farm they can be taught how they are being used to uphold their own enslavement. I must enter there nearby church with Everard and preach directly to the crowd that assaulted us and appeal to their reason."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3046,
+        "fields": {
+            "question": 415,
+            "description": "Without these two great men the common man could only dream of freedom from the Norman Yoake. But it is now possible that true freedom for all can become reality across the Commonwealth, for their role in this revolution the movement of True Levellers must praise them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3047,
+        "fields": {
+            "question": 415,
+            "description": "These men only objected to the monarchy because it infringed upon the freedoms of the well off and powerful. They were entwined with the gentry and clergy that maintained the oppressive Norman yoake and sought to destroy the movements that challenged them. Their passing is of no concern to our radical movement."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3048,
+        "fields": {
+            "question": 415,
+            "description": "At last the worship of these two men will start to wane! They will stand in the way of our movement to destroy the Norman Yoake no more and we are finally free to free the people from their enslavement."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3049,
+        "fields": {
+            "question": 416,
+            "description": "The common man must no longer live under the steel of the generals who now rule this land. An uprising of the people must occur, they must flock to our communities across the island and help protect our common interest from their tyrannical greed."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3050,
+        "fields": {
+            "question": 416,
+            "description": "I am once again vindicated, those who claimed to lead our revolution against the Norman kings have betrayed us the moment their own position is under threat."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3051,
+        "fields": {
+            "question": 417,
+            "description": "Although the traitors coup has failed we must not hold back on our mission to destroy the Norman laws. Pamphlets attacking private property, hereditary powers and trading must be disseminated across the land immediately."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3052,
+        "fields": {
+            "question": 417,
+            "description": "Those who rule the land with steel and through bloodshed must no longer be afforded the respect they have had. To bring true freedom to all men the arbitrary whims of the generals must be confronted."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3053,
+        "fields": {
+            "question": 418,
+            "description": "True freedom, being the free enjoyment of the Earth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3054,
+        "fields": {
+            "question": 418,
+            "description": "The glory of Israel's commonwealth, They had no beggar among them. And it is the duty of the True Levellers to make this a reality within our own land."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3055,
+        "fields": {
+            "question": 418,
+            "description": "How the  land is unfairly divided and the benefits of the common stock. For the freedom of the one is the freedom of the other, and when this is recognised men will be of true, faithful and public spirits and not false-hearted."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3056,
+        "fields": {
+            "question": 418,
+            "description": "The fact that man is fallen from his innocence, and from the glory of the spirit of common freedom, love and peace, into enmity; everyone now strives to be king over another; everyone strives to be a landlord of the earth, and to make his brother his servant to work for him."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3057,
+        "fields": {
+            "question": 419,
+            "description": "The choice of how to worship should be deferred to each man, and be his choice alone! The devastation left by the endless bloodshed of the past centuries demands a new age of reconciliation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3058,
+        "fields": {
+            "question": 419,
+            "description": "For too long the clerical classes have obstructed the true writings of our Lord from the people. We must forever strive to bring the word of God to his people without intermediary!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3059,
+        "fields": {
+            "question": 420,
+            "description": "Everard is right, the gentry is to powerful and our sympathetic allies in parliament are to weak to protect our communities. We must make the journey to the new world, a place of true opportunity were, free from the violent gentry we can be free to enjoy the fruits of the earth in peace."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3060,
+        "fields": {
+            "question": 420,
+            "description": "As much as it pains you to a freind in pain you cannot give up on your holy task. Like Job, God will test you and those who believe in your movement but through your collective suffering you will acheive true freedom for all."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3061,
+        "fields": {
+            "question": 421,
+            "description": "Everard is right, the gentry is to powerful and our sympathetic allies in parliament are to weak to protect our communities. We must make the journey to the new world, a place of true opportunity were, free from the violent gentry we can be free to enjoy the fruits of the earth in peace."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3062,
+        "fields": {
+            "question": 421,
+            "description": "Everard is right, the gentry is to powerful and our sympathetic allies in parliament are to weak to protect our communities. After defending the rights of the Irish catholics we have received an invitation to move our commune and live in peace, from there we will be able to continue influence the direction of the Commonwealth without fearing for our safety."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3063,
+        "fields": {
+            "question": 421,
+            "description": "As much as it pains yout to a freind in pain you cannot give up on your holy task. Like Job, God will test you and those who believe in your movement but through your collective suffering you will acheive true freedom for all."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 3064,
+        "fields": {
+            "question": 422,
+            "description": "text"
+        }
+    }
+]
+
+campaignTrail_temp.answer_feedback_json = [
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1101,
+        "fields": {
+            "answer": 3001,
+            "candidate": 131,
+            "answer_feedback": "Vestiges of Royal power developed great anxieties, the gentry feared for the loss of their wealth, the clergy feared for the loss their control over the saviour’s teachings  and the lawyers feared for their ability to defend the other two."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1102,
+        "fields": {
+            "answer": 3002,
+            "candidate": 131,
+            "answer_feedback": "John Bradshaw as the judge that ruled for the execution of the king feared for his life, mob's would frequently attack him for his regicide, a period of violence and passion had just been ignited."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1103,
+        "fields": {
+            "answer": 3003,
+            "candidate": 131,
+            "answer_feedback": "To avoid the disaster of a deadlock the Independants spearheaded a pragmatic reform which defended the rights of Protestant dissidents whilst furthering the persecution of Catholics as fears of a papist plot in the new republic flourished."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1104,
+        "fields": {
+            "answer": 3004,
+            "candidate": 131,
+            "answer_feedback": "As the parliamentary deadlock ground on, the working men of London rallied for radical petitions and policies as pamphleteers stoked the fires of discontent."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1105,
+        "fields": {
+            "answer": 3005,
+            "candidate": 131,
+            "answer_feedback": "As Puritanism was gaining momentum across Britain Cromwell's attention was drawn to the last holdout of the Royalist military, catholic Ireland. As the debates in parliament roared on, the New Model Army was being mobilised for a final attack on the treacherous cavaliers."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1106,
+        "fields": {
+            "answer": 3006,
+            "candidate": 131,
+            "answer_feedback": "Expansion of suffrage in the election of members of Parliament and the election of members to significant roles were discussed and even supported by many influential politicians, not least John Pym who made an effort to democratise the Council of State."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1107,
+        "fields": {
+            "answer": 3007,
+            "candidate": 131,
+            "answer_feedback": "In a busy street in the North of London boards were nailed over the grand entrance to the Red Bull theatre by New Model Army soldiers. A desperate actor bearing witness to the prohibition of his way of life threw himself at the doors and tore at the blockade, only to be run through by a pike and left to bleed out in the streets."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1108,
+        "fields": {
+            "answer": 3008,
+            "candidate": 131,
+            "answer_feedback": "The miraculous news of political action is greeted with wild support in the streets, a 10% decimation tax is levied on the aristocratic families, with those who allied with the Royal family paying double, is especially popular amongst the commoners."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1109,
+        "fields": {
+            "answer": 3009,
+            "candidate": 131,
+            "answer_feedback": "As a result of funds for the Army  being in constant ready supply and the Royalist insurrection in Cornwall and the Scottish border were easily crushed, improving relations within the ranks as the rank and file trusted the ability of the officers and generals."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1110,
+        "fields": {
+            "answer": 3010,
+            "candidate": 131,
+            "answer_feedback": "During the siege of Wexford Castle the Lord Protector received a letter from General Thomas Fairfax in London: <p> To his Excellency Oliver Cromwell, Parliament is no longer ours, we await anxiously for the return of your leadership, our puritanical tradition depends upon it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1111,
+        "fields": {
+            "answer": 3011,
+            "candidate": 131,
+            "answer_feedback": "Whilst laying siege to Kilkenny Castle the Lord Protector receive the news that parliament now sided against his puritan political project. Nevertheless, he claimed that crushing the members of the house would be as simple as taking the olf Irish fort that stood before his mighty army."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1112,
+        "fields": {
+            "answer": 3012,
+            "candidate": 131,
+            "answer_feedback": "Given the lack of opportunities within the capital you join the swelling ranks of the unemployed. From your time involved with those left behind by society you start to develop a hatred of the greed shown by the traders of the city. As your radicalism becomes more pronounced you start to meet with the recently released William Everard."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1113,
+        "fields": {
+            "answer": 3013,
+            "candidate": 131,
+            "answer_feedback": "When you were a trader you knew that you were no better than any of the other greedy men you did business with, thinking that what you did was how you had to live in order to survive. But now that you have been cast out from their guild you’ve started to see the truth of what you were doing: indulging yourself in <b>Sin</b>."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1114,
+        "fields": {
+            "answer": 3014,
+            "candidate": 131,
+            "answer_feedback": "You break out into a sprint, pounding your feet across the ice as your anxious mind races, without an income you will no longer afford food, shelter or protection. But as you slam through the door of your home you hear a message from the Creator: “Let Israel Go Free”, and you become aware of what your duty has become."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1115,
+        "fields": {
+            "answer": 3015,
+            "candidate": 131,
+            "answer_feedback": "Knowing that by expressing your beliefs you will be branded a radical and that those who associated with you will have their reputations tarnished, you begin your pamphlet with an apology. But, you reassure the inhabitants of Lancashire, God has manifested himself within you, a humble boy of Lancaster, to impart his message to humanity and it is now your duty to speak the divine truth."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1116,
+        "fields": {
+            "answer": 3016,
+            "candidate": 131,
+            "answer_feedback": "The British are no longer subjects, unlike the peasants of Europe they are now finding their role as citizens within their own state. As God has chosen you as his messenger it is your task to guide the people and help them free themselves."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1117,
+        "fields": {
+            "answer": 3017,
+            "candidate": 131,
+            "answer_feedback": "For imparting this holy task unto yourself you are eternally grateful to the Creator. Calling for the people to explore their own personal relationship with God you gain the attention of the numerous radical dissident movements that are sprouting up around the capital."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1118,
+        "fields": {
+            "answer": 3018,
+            "candidate": 131,
+            "answer_feedback": "When the common man hears the word of the Creator it is usually from the mouth of a clergyman or intellectual. But now, amidst an age of vainglorious traders and politicians unable to withstand the temptation of greed, you as a common man have been tasked by Reason to bring true freedom back to mankind."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1119,
+        "fields": {
+            "answer": 3019,
+            "candidate": 131,
+            "answer_feedback": "By appealing to the Common treasury you garner support among the peasant farmers. And although they hold little power at present they are becoming increasingly aware of their collective strength."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1120,
+        "fields": {
+            "answer": 3020,
+            "candidate": 131,
+            "answer_feedback": "Supporting equality between man and woman is novel for the age, but this position draws supporters from the politically concious women of London."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1121,
+        "fields": {
+            "answer": 3021,
+            "candidate": 131,
+            "answer_feedback": "Following such a long period of violence and death words of love soothe the aches of a population who has last so much of late."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1122,
+        "fields": {
+            "answer": 3022,
+            "candidate": 131,
+            "answer_feedback": "Members of the Gentry our outraged and loudly complain to their allies in parliament however, this only makes you more popular with the commons who are ready to take revenge on those who have forced them into lives of servitude."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1123,
+        "fields": {
+            "answer": 3023,
+            "candidate": 131,
+            "answer_feedback": "Your writings about the struggles of daily life have resonated with some of London’s poor, meaning they become more conscious of the disparity between their daily struggles and the lives of wealthy traders and nobles."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1124,
+        "fields": {
+            "answer": 3024,
+            "candidate": 131,
+            "answer_feedback": "For his role in a plot to murder the recently executeded King, Everard with imprisoned in the Tower of London by the parliamentary authorities, having spent years within the radical political circles of the capital Everard accelerates your split from the moneyed traders."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1125,
+        "fields": {
+            "answer": 3025,
+            "candidate": 131,
+            "answer_feedback": "Moving to a village close to your old home in London is appreciated by your wife, whilst the common folk seem welcoming of your community, some even read your pamphlets and offer you food until your crops are ready to harvest."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1126,
+        "fields": {
+            "answer": 3026,
+            "candidate": 131,
+            "answer_feedback": "In a field adjacent to the site of the Battle of Naesby you sow Corn and Carrots and begin construction of barns and houses. Spirits among the members of yoiiur community is high and many weep with joy at their new found freedom from the city."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1127,
+        "fields": {
+            "answer": 3027,
+            "candidate": 131,
+            "answer_feedback": "Upon the site where Alfred the Great turned a foreign invasion and ensured the resurgence of the Anglo-Saxon people the Diggers sow your crops and await for the waves of dissaffected commoners who are bound to hear your rallying cry and flock to this holy field."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1128,
+        "fields": {
+            "answer": 3028,
+            "candidate": 131,
+            "answer_feedback": "Unless you plan on sustaining your community on Pete this is a terrible place to start your commune, thankfully Everard talks some sense into you and you settle on St George’s Hill, although Everard has noticeably less trusting in your decisions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1129,
+        "fields": {
+            "answer": 3029,
+            "candidate": 131,
+            "answer_feedback": "After decades of violence many yearn for a feeling of stability, your promises of returning mankind to a period before it’s apparent corruption should therefore resonate with those who read your decleration."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1130,
+        "fields": {
+            "answer": 3030,
+            "candidate": 131,
+            "answer_feedback": "Religious doctrine within England has swungback and forth from Catholicism to Protestantism for centuries and now its turned to dogmatic Puritanism. Confusion around the states position has lead to countless deaths and by promising to end this the poeple of the Commonwealth can begin to hope for a future free from fear."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1131,
+        "fields": {
+            "answer": 3031,
+            "candidate": 131,
+            "answer_feedback": "Mankind lived, for centuries off of the common treasury. It was only when the selfish nobles from Normandy conquered the land and enclosed the fields that the Anglo-Saxons became slaves. Now their servitude has lasted for generations and many have forgotten there glorious past. Your writing has begun to awaken them to the freedom’s enjoyed by their ancestors."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1132,
+        "fields": {
+            "answer": 3032,
+            "candidate": 131,
+            "answer_feedback": "Biblical stories are popular amongst the illiterate peasantry as the priests are able to read the tales to them during their sermons. By making these references and attaching them to the Digger movement you are able to inspire more peasants to start their own communities, with communes sprouting in Wellingborough and Bedford."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1133,
+        "fields": {
+            "answer": 3033,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1134,
+        "fields": {
+            "answer": 3034,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1135,
+        "fields": {
+            "answer": 3035,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1136,
+        "fields": {
+            "answer": 3036,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1137,
+        "fields": {
+            "answer": 3037,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1138,
+        "fields": {
+            "answer": 3038,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1139,
+        "fields": {
+            "answer": 3039,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 1140,
+        "fields": {
+            "answer": 3040,
+            "candidate": 131,
+            "answer_feedback": "text"
+        }
+    }
+ ]
+
+ campaignTrail_temp.states_json = [
+    {
+        "model": "campaign_trail.state",
+        "pk": 232,
+        "fields": {
+            "name": "London",
+            "abbr": "NY",
+            "electoral_votes": 0,
+            "popular_votes": 100032,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 233,
+        "fields": {
+            "name": "Northumbria",
+            "abbr": "NC",
+            "electoral_votes": 0,
+            "popular_votes": 32412,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 234,
+        "fields": {
+            "name": "Mercia",
+            "abbr": "GA",
+            "electoral_votes": 0,
+            "popular_votes": 35123,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 235,
+        "fields": {
+            "name": "Sussex and Kent",
+            "abbr": "NJ",
+            "electoral_votes": 0,
+            "popular_votes": 39032,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 236,
+        "fields": {
+            "name": "East Anglia",
+            "abbr": "TN",
+            "electoral_votes": 0,
+            "popular_votes": 47232,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 237,
+        "fields": {
+            "name": "Wessex",
+            "abbr": "CT",
+            "electoral_votes": 0,
+            "popular_votes": 43769,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 238,
+        "fields": {
+            "name": "Cornwall",
+            "abbr": "VT",
+            "electoral_votes": 0,
+            "popular_votes": 7821,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 239,
+        "fields": {
+            "name": "Wales",
+            "abbr": "MA",
+            "electoral_votes": 0,
+            "popular_votes": 23642,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 240,
+        "fields": {
+            "name": "Scotland",
+            "abbr": "SC",
+            "electoral_votes": 0,
+            "popular_votes": 46202,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 241,
+        "fields": {
+            "name": "Isle of Man",
+            "abbr": "NH",
+            "electoral_votes": 0,
+            "popular_votes": 47232,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.state",
+        "pk": 242,
+        "fields": {
+            "name": "Ireland",
+            "abbr": "RI",
+            "electoral_votes": 0,
+            "popular_votes": 47232,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 13
+        }
+    }
+]
+
+campaignTrail_temp.issues_json = [
+    {
+        "model": "campaign_trail.issue",
+        "pk": 32,
+        "fields": {
+            "name": "Protestantism",
+            "description": 0,
+            "stance_1": "Radical Dissenter",
+            "stance_desc_1": 0,
+            "stance_2": "Radical Dissenter",
+            "stance_desc_2": 0,
+            "stance_3": "Dissenter",
+            "stance_desc_3": 0,
+            "stance_4": "Anglican",
+            "stance_desc_4": 0,
+            "stance_5": "Anglican",
+            "stance_desc_5": 0,
+            "stance_6": "Puritain",
+            "stance_desc_6": 0,
+            "stance_7": "Zealous Puritain",
+            "stance_desc_7": 0,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.issue",
+        "pk": 33,
+        "fields": {
+            "name": "Gentry's power",
+            "description": 0,
+            "stance_1": "Nonexistent",
+            "stance_desc_1": 0,
+            "stance_2": "Minimal",
+            "stance_desc_2": 0,
+            "stance_3": "Moderate",
+            "stance_desc_3": 0,
+            "stance_4": "Moderate",
+            "stance_desc_4": 0,
+            "stance_5": "Influential",
+            "stance_desc_5": 0,
+            "stance_6": "Dominant",
+            "stance_desc_6": 0,
+            "stance_7": "Total Control",
+            "stance_desc_7": 0,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.issue",
+        "pk": 34,
+        "fields": {
+            "name": "Poverty",
+            "description": 0,
+            "stance_1": "Wealthy",
+            "stance_desc_1": 0,
+            "stance_2": "Moderate",
+            "stance_desc_2": 0,
+            "stance_3": "Copeing",
+            "stance_desc_3": 0,
+            "stance_4": "Prevalent",
+            "stance_desc_4": 0,
+            "stance_5": "Struggling",
+            "stance_desc_5": 0,
+            "stance_6": "Broken",
+            "stance_desc_6": 0,
+            "stance_7": "Everyman a Pauper",
+            "stance_desc_7": 0,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.issue",
+        "pk": 35,
+        "fields": {
+            "name": "Reconstruction",
+            "description": 0,
+            "stance_1": "Devastated",
+            "stance_desc_1": 0,
+            "stance_2": "Ravaged",
+            "stance_desc_2": 0,
+            "stance_3": "Liveable",
+            "stance_desc_3": 0,
+            "stance_4": "Functioning",
+            "stance_desc_4": 0,
+            "stance_5": "Rebuilt",
+            "stance_desc_5": 0,
+            "stance_6": "Rebuilt",
+            "stance_desc_6": 0,
+            "stance_7": "Prosperous",
+            "stance_desc_7": 0,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.issue",
+        "pk": 36,
+        "fields": {
+            "name": "Geography",
+            "description": 0,
+            "stance_1": "Rural",
+            "stance_desc_1": 0,
+            "stance_2": "Rural",
+            "stance_desc_2": 0,
+            "stance_3": "Rural",
+            "stance_desc_3": 0,
+            "stance_4": "Mixed",
+            "stance_desc_4": 0,
+            "stance_5": "Mixed",
+            "stance_desc_5": 0,
+            "stance_6": "Urban",
+            "stance_desc_6": 0,
+            "stance_7": "METROPOLIS",
+            "stance_desc_7": 0,
+            "election": 13
+        }
+    },
+    {
+        "model": "campaign_trail.issue",
+        "pk": 37,
+        "fields": {
+            "name": "Papist Influence",
+            "description": 0,
+            "stance_1": "Vatican Aligned",
+            "stance_desc_1": 0,
+            "stance_2": "Drainer",
+            "stance_desc_2": 0,
+            "stance_3": "Drainer",
+            "stance_desc_3": 0,
+            "stance_4": "Drainer",
+            "stance_desc_4": 0,
+            "stance_5": "Drainer",
+            "stance_desc_5": 0,
+            "stance_6": "Drainer",
+            "stance_desc_6": 0,
+            "stance_7": "Sad Boy",
+            "stance_desc_7": 0,
+            "election": 13
+        }
+    }
+]
+
+campaignTrail_temp.state_issue_score_json = [
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1123,
+        "fields": {
+            "state": 232,
+            "issue": 32,
+            "state_issue_score": 0.9,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1124,
+        "fields": {
+            "state": 233,
+            "issue": 32,
+            "state_issue_score": -0.9,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1125,
+        "fields": {
+            "state": 234,
+            "issue": 32,
+            "state_issue_score": 0.4,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1126,
+        "fields": {
+            "state": 235,
+            "issue": 32,
+            "state_issue_score": -0.4,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1127,
+        "fields": {
+            "state": 236,
+            "issue": 32,
+            "state_issue_score": -0.7,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1128,
+        "fields": {
+            "state": 237,
+            "issue": 32,
+            "state_issue_score": -0.81,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1129,
+        "fields": {
+            "state": 238,
+            "issue": 32,
+            "state_issue_score": 0.7,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1130,
+        "fields": {
+            "state": 239,
+            "issue": 32,
+            "state_issue_score": 0.4,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1131,
+        "fields": {
+            "state": 240,
+            "issue": 32,
+            "state_issue_score": -0.2,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1132,
+        "fields": {
+            "state": 241,
+            "issue": 32,
+            "state_issue_score": 0.1,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1133,
+        "fields": {
+            "state": 232,
+            "issue": 33,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1134,
+        "fields": {
+            "state": 233,
+            "issue": 33,
+            "state_issue_score": 0.1,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1135,
+        "fields": {
+            "state": 234,
+            "issue": 33,
+            "state_issue_score": 0.7,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1136,
+        "fields": {
+            "state": 235,
+            "issue": 33,
+            "state_issue_score": 0.9,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1137,
+        "fields": {
+            "state": 236,
+            "issue": 33,
+            "state_issue_score": 0.9,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1138,
+        "fields": {
+            "state": 237,
+            "issue": 33,
+            "state_issue_score": 0.8,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1139,
+        "fields": {
+            "state": 238,
+            "issue": 33,
+            "state_issue_score": -0.3,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1140,
+        "fields": {
+            "state": 239,
+            "issue": 33,
+            "state_issue_score": -0.3,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1141,
+        "fields": {
+            "state": 240,
+            "issue": 33,
+            "state_issue_score": -0.6,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1142,
+        "fields": {
+            "state": 241,
+            "issue": 33,
+            "state_issue_score": -0.8,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1143,
+        "fields": {
+            "state": 242,
+            "issue": 33,
+            "state_issue_score": 0.8,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1144,
+        "fields": {
+            "state": 232,
+            "issue": 34,
+            "state_issue_score": 0.1,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1145,
+        "fields": {
+            "state": 233,
+            "issue": 34,
+            "state_issue_score": -0.3,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1146,
+        "fields": {
+            "state": 234,
+            "issue": 34,
+            "state_issue_score": -0.6,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1147,
+        "fields": {
+            "state": 235,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1148,
+        "fields": {
+            "state": 236,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1149,
+        "fields": {
+            "state": 237,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1150,
+        "fields": {
+            "state": 238,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1151,
+        "fields": {
+            "state": 239,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1152,
+        "fields": {
+            "state": 240,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1153,
+        "fields": {
+            "state": 241,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1154,
+        "fields": {
+            "state": 242,
+            "issue": 34,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1155,
+        "fields": {
+            "state": 232,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1156,
+        "fields": {
+            "state": 233,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1157,
+        "fields": {
+            "state": 234,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1158,
+        "fields": {
+            "state": 235,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1159,
+        "fields": {
+            "state": 236,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1160,
+        "fields": {
+            "state": 237,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1161,
+        "fields": {
+            "state": 238,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1162,
+        "fields": {
+            "state": 239,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1163,
+        "fields": {
+            "state": 240,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1164,
+        "fields": {
+            "state": 241,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1165,
+        "fields": {
+            "state": 242,
+            "issue": 35,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1167,
+        "fields": {
+            "state": 232,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1168,
+        "fields": {
+            "state": 233,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1169,
+        "fields": {
+            "state": 234,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1170,
+        "fields": {
+            "state": 235,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1171,
+        "fields": {
+            "state": 236,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1172,
+        "fields": {
+            "state": 237,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1173,
+        "fields": {
+            "state": 238,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1174,
+        "fields": {
+            "state": 239,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1175,
+        "fields": {
+            "state": 240,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1176,
+        "fields": {
+            "state": 241,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1177,
+        "fields": {
+            "state": 242,
+            "issue": 36,
+            "state_issue_score": -0.5,
+            "weight": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.state_issue_score",
+        "pk": 1178,
+        "fields": {
+            "state": 242,
+            "issue": 37,
+            "state_issue_score": -0.95,
+            "weight": 0.5
+        }
+    }
+ ]
+
+ campaignTrail_temp.candidate_issue_score_json = [
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 524,
+        "fields": {
+            "candidate": 131,
+            "issue": 32,
+            "issue_score": 0.7
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 525,
+        "fields": {
+            "candidate": 131,
+            "issue": 33,
+            "issue_score": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 526,
+        "fields": {
+            "candidate": 131,
+            "issue": 34,
+            "issue_score": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 527,
+        "fields": {
+            "candidate": 131,
+            "issue": 35,
+            "issue_score": -0.3
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 528,
+        "fields": {
+            "candidate": 131,
+            "issue": 36,
+            "issue_score": -0.55
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 529,
+        "fields": {
+            "candidate": 132,
+            "issue": 32,
+            "issue_score": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 530,
+        "fields": {
+            "candidate": 132,
+            "issue": 33,
+            "issue_score": -0.75
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 531,
+        "fields": {
+            "candidate": 132,
+            "issue": 34,
+            "issue_score": 0.8
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 532,
+        "fields": {
+            "candidate": 132,
+            "issue": 35,
+            "issue_score": -0.9
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 533,
+        "fields": {
+            "candidate": 132,
+            "issue": 36,
+            "issue_score": 0.55
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 534,
+        "fields": {
+            "candidate": 133,
+            "issue": 32,
+            "issue_score": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 535,
+        "fields": {
+            "candidate": 133,
+            "issue": 33,
+            "issue_score": -0.35
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 536,
+        "fields": {
+            "candidate": 133,
+            "issue": 34,
+            "issue_score": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 537,
+        "fields": {
+            "candidate": 133,
+            "issue": 35,
+            "issue_score": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 538,
+        "fields": {
+            "candidate": 133,
+            "issue": 36,
+            "issue_score": 0.15
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 539,
+        "fields": {
+            "candidate": 134,
+            "issue": 32,
+            "issue_score": -0.9
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 540,
+        "fields": {
+            "candidate": 134,
+            "issue": 33,
+            "issue_score": 0.95
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 541,
+        "fields": {
+            "candidate": 134,
+            "issue": 34,
+            "issue_score": -0.8
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 542,
+        "fields": {
+            "candidate": 134,
+            "issue": 35,
+            "issue_score": 0.9
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 543,
+        "fields": {
+            "candidate": 134,
+            "issue": 36,
+            "issue_score": 0.75
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 544,
+        "fields": {
+            "candidate": 131,
+            "issue": 37,
+            "issue_score": 0.15
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 545,
+        "fields": {
+            "candidate": 132,
+            "issue": 37,
+            "issue_score": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 546,
+        "fields": {
+            "candidate": 133,
+            "issue": 37,
+            "issue_score": 0.75
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 547,
+        "fields": {
+            "candidate": 134,
+            "issue": 37,
+            "issue_score": 0.95
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_issue_score_json = [
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 544,
+        "fields": {
+            "candidate": 135,
+            "issue": 32,
+            "issue_score": -0.6
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 545,
+        "fields": {
+            "candidate": 135,
+            "issue": 33,
+            "issue_score": 0
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 546,
+        "fields": {
+            "candidate": 135,
+            "issue": 34,
+            "issue_score": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 547,
+        "fields": {
+            "candidate": 135,
+            "issue": 35,
+            "issue_score": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 548,
+        "fields": {
+            "candidate": 135,
+            "issue": 36,
+            "issue_score": -0.55
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 549,
+        "fields": {
+            "candidate": 135,
+            "issue": 37,
+            "issue_score": -0.25
+        }
+    }
+]
+
+campaignTrail_temp.candidate_state_multiplier_json = [
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1431,
+        "fields": {
+            "candidate": 131,
+            "state": 232,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1432,
+        "fields": {
+            "candidate": 131,
+            "state": 233,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1433,
+        "fields": {
+            "candidate": 131,
+            "state": 234,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1434,
+        "fields": {
+            "candidate": 131,
+            "state": 235,
+            "state_multiplier": 0.22
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1447,
+        "fields": {
+            "candidate": 131,
+            "state": 236,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1435,
+        "fields": {
+            "candidate": 131,
+            "state": 237,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1436,
+        "fields": {
+            "candidate": 131,
+            "state": 238,
+            "state_multiplier": 0.12
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1437,
+        "fields": {
+            "candidate": 131,
+            "state": 239,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1438,
+        "fields": {
+            "candidate": 131,
+            "state": 240,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1439,
+        "fields": {
+            "candidate": 131,
+            "state": 241,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1440,
+        "fields": {
+            "candidate": 131,
+            "state": 242,
+            "state_multiplier": 0.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1457,
+        "fields": {
+            "candidate": 132,
+            "state": 232,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1459,
+        "fields": {
+            "candidate": 132,
+            "state": 233,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1466,
+        "fields": {
+            "candidate": 132,
+            "state": 234,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1470,
+        "fields": {
+            "candidate": 132,
+            "state": 235,
+            "state_multiplier": 0.4
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1473,
+        "fields": {
+            "candidate": 132,
+            "state": 236,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1476,
+        "fields": {
+            "candidate": 132,
+            "state": 237,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1477,
+        "fields": {
+            "candidate": 132,
+            "state": 238,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1479,
+        "fields": {
+            "candidate": 132,
+            "state": 239,
+            "state_multiplier": 0.3
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1480,
+        "fields": {
+            "candidate": 132,
+            "state": 240,
+            "state_multiplier": 0.3
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1481,
+        "fields": {
+            "candidate": 132,
+            "state": 241,
+            "state_multiplier": 0.8
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1482,
+        "fields": {
+            "candidate": 132,
+            "state": 242,
+            "state_multiplier": 1.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1483,
+        "fields": {
+            "candidate": 133,
+            "state": 232,
+            "state_multiplier": 0.4
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1485,
+        "fields": {
+            "candidate": 133,
+            "state": 233,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1492,
+        "fields": {
+            "candidate": 133,
+            "state": 234,
+            "state_multiplier": 0.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1496,
+        "fields": {
+            "candidate": 133,
+            "state": 235,
+            "state_multiplier": 0.4
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1499,
+        "fields": {
+            "candidate": 133,
+            "state": 236,
+            "state_multiplier": 0.4
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1502,
+        "fields": {
+            "candidate": 133,
+            "state": 237,
+            "state_multiplier": 1.2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1503,
+        "fields": {
+            "candidate": 133,
+            "state": 238,
+            "state_multiplier": 1.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1505,
+        "fields": {
+            "candidate": 133,
+            "state": 239,
+            "state_multiplier": 0.11
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1506,
+        "fields": {
+            "candidate": 133,
+            "state": 240,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1507,
+        "fields": {
+            "candidate": 133,
+            "state": 241,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1508,
+        "fields": {
+            "candidate": 133,
+            "state": 242,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1509,
+        "fields": {
+            "candidate": 134,
+            "state": 232,
+            "state_multiplier": 2
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1511,
+        "fields": {
+            "candidate": 134,
+            "state": 233,
+            "state_multiplier": 1.1
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1518,
+        "fields": {
+            "candidate": 134,
+            "state": 234,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1522,
+        "fields": {
+            "candidate": 134,
+            "state": 235,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1525,
+        "fields": {
+            "candidate": 134,
+            "state": 236,
+            "state_multiplier": 0.9
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1528,
+        "fields": {
+            "candidate": 134,
+            "state": 237,
+            "state_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1529,
+        "fields": {
+            "candidate": 134,
+            "state": 238,
+            "state_multiplier": 0.9
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1531,
+        "fields": {
+            "candidate": 134,
+            "state": 239,
+            "state_multiplier": 0.95
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1532,
+        "fields": {
+            "candidate": 134,
+            "state": 240,
+            "state_multiplier": 1.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1533,
+        "fields": {
+            "candidate": 134,
+            "state": 241,
+            "state_multiplier": 1.05
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 1534,
+        "fields": {
+            "candidate": 134,
+            "state": 242,
+            "state_multiplier": 1.20
+        }
+    }
+]
+
+{
+}
+
+(function(e, t, n, r, i) {
+    function s(e, t, n, r) {
+        r = r instanceof Array ? r : [];
+        var i = {};
+        for (var s = 0; s < r.length; s++) {
+            i[r[s]] = true
+        }
+        var o = function(e) {
+            this.element = e
+        };
+        o.prototype = n;
+        e.fn[t] = function() {
+            var n = arguments;
+            var r = this;
+            this.each(function() {
+                var s = e(this);
+                var u = s.data("plugin-" + t);
+                if (!u) {
+                    u = new o(s);
+                    s.data("plugin-" + t, u);
+                    if (u._init) {
+                        u._init.apply(u, n)
+                    }
+                } else if (typeof n[0] == "string" && n[0].charAt(0) != "_" && typeof u[n[0]] == "function") {
+                    var a = Array.prototype.slice.call(n, 1);
+                    var f = u[n[0]].apply(u, a);
+                    if (n[0] in i) {
+                        r = f
+                    }
+                }
+            });
+            return r
+        }
+    }
+    var o = 930,
+        u = 630,
+        a = 70;
+    var f = {
+        stateStyles: {
+            fill: "#333",
+            stroke: "#666",
+            "stroke-width": 1,
+            "stroke-linejoin": "round",
+            scale: [1, 1]
+        },
+        stateHoverStyles: {
+            fill: "#33c",
+            stroke: "#000",
+            scale: [1.1, 1.1]
+        },
+        stateHoverAnimation: 500,
+        stateSpecificStyles: {},
+        stateSpecificHoverStyles: {},
+        click: null,
+        mouseover: null,
+        mouseout: null,
+        clickState: {},
+        mouseoverState: {},
+        mouseoutState: {},
+        showLabels: true,
+        labelWidth: 20,
+        labelHeight: 15,
+        labelGap: 6,
+        labelRadius: 3,
+        labelBackingStyles: {
+            fill: "#333",
+            stroke: "#666",
+            "stroke-width": 1,
+            "stroke-linejoin": "round",
+            scale: [1, 1]
+        },
+        labelBackingHoverStyles: {
+            fill: "#33c",
+            stroke: "#000"
+        },
+        stateSpecificLabelBackingStyles: {},
+        stateSpecificLabelBackingHoverStyles: {},
+        labelTextStyles: {
+            fill: "#fff",
+            stroke: "none",
+            "font-weight": 300,
+            "stroke-width": 0,
+            "font-size": "10px"
+        },
+        labelTextHoverStyles: {},
+        stateSpecificLabelTextStyles: {},
+        stateSpecificLabelTextHoverStyles: {}
+    };
+    var l = {
+        _init: function(t) {
+            this.options = {};
+            e.extend(this.options, f, t);
+            var n = this.element.width();
+            var i = this.element.height();
+            var s = this.element.width() / o;
+            var l = this.element.height() / u;
+            this.scale = Math.min(s, l);
+            this.labelAreaWidth = Math.ceil(a / this.scale);
+            var c = o + Math.max(0, this.labelAreaWidth - a);
+            this.paper = r(this.element.get(0), c, u);
+            this.paper.setSize(n, i);
+            this.paper.setViewBox(0, 0, c, u, false);
+            this.stateHitAreas = {};
+            this.stateShapes = {};
+            this.topShape = null;
+            this._initCreateStates();
+            this.labelShapes = {};
+            this.labelTexts = {};
+            this.labelHitAreas = {};
+ 
+        },
+        _initCreateStates: function() {
+            var t = this.options.stateStyles;
+            var n = this.paper;
+            var r = {
+				SC: "m 521.4385,231.34388 h 18.24645 v 19.70617 h -21.16589 v -19.7974 z",
+				GA: "m 656.65832,392.41651 h 18.24646 v 19.70617 h -21.16589 v -19.79741 z",
+				NC: "m 602.00347,319.67431 h 18.24645 v 19.70617 h -21.16589 v -19.79741 z",
+				RI: "m 429.2131,382.96547 h 18.24644 v 19.70617 h -21.16589 v -19.79741 z",
+				CT: "m 626.94363,480.70842 h 18.24645 v 19.70617 h -21.1659 v -19.7974 z",
+				MA: "m 563.81201,415.68664 h 18.24645 v 19.70617 h -21.1659 v -19.7974 Z",
+				NH: "m 517.2278,329.87013 h 18.2474 v 19.70618 h -21.1671 v -19.7974 Z",
+				VT: "m 545.4404,532.96822 h 18.2464 v 19.70618 h -21.1659 v -19.79741 z",
+                NY: "m 689.4404,447.96822 h 18.2464 v 19.70618 h -21.1659 v -19.79741 z",
+                NJ: "m 719.4404,459.96822 h 18.2464 v 19.70618 h -21.1659 v -19.79741 z",
+                TN: "m 719.4404,390.96822 h 18.2464 v 19.70618 h -21.1659 v -19.79741 z",
+
+				};
+            var i = {};
+            for (var s in r) {
+                i = {};
+                if (this.options.stateSpecificStyles[s]) {
+                    e.extend(i, t, this.options.stateSpecificStyles[s])
+                } else {
+                    i = t
+                }
+                this.stateShapes[s] = n.path(r[s]).attr(i);
+                this.topShape = this.stateShapes[s];
+                this.stateHitAreas[s] = n.path(r[s]).attr({
+                    fill: "#000",
+                    "stroke-width": 0,
+                    opacity: 0,
+                    cursor: "pointer"
+                });
+                this.stateHitAreas[s].node.dataState = s
+            }
+            this._onClickProxy = e.proxy(this, "_onClick");
+            this._onMouseOverProxy = e.proxy(this, "_onMouseOver"),
+            this._onMouseOutProxy = e.proxy(this, "_onMouseOut");
+            for (var s in this.stateHitAreas) {
+                this.stateHitAreas[s].toFront();
+                e(this.stateHitAreas[s].node).bind("mouseout", this._onMouseOutProxy);
+                e(this.stateHitAreas[s].node).bind("click", this._onClickProxy);
+                e(this.stateHitAreas[s].node).bind("mouseover", this._onMouseOverProxy)
+            }
+        },
+        _getStateFromEvent: function(e) {
+            var t = e.target && e.target.dataState || e.dataState;
+            return this._getState(t)
+        },
+        _getState: function(e) {
+            var t = this.stateShapes[e];
+            var n = this.stateHitAreas[e];
+            var r = this.labelShapes[e];
+            var i = this.labelTexts[e];
+            var s = this.labelHitAreas[e];
+            return {
+                shape: t,
+                hitArea: n,
+                name: e,
+                labelBacking: r,
+                labelText: i,
+                labelHitArea: s
+            }
+        },
+        _onMouseOut: function(e) {
+            var t = this._getStateFromEvent(e);
+            if (!t.hitArea) {
+                return
+            }
+            return !this._triggerEvent("mouseout", e, t)
+        },
+        _defaultMouseOutAction: function(t) {
+            var n = {};
+            if (this.options.stateSpecificStyles[t.name]) {
+                e.extend(n, this.options.stateStyles, this.options.stateSpecificStyles[t.name])
+            } else {
+                n = this.options.stateStyles
+            }
+            t.shape.animate(n, this.options.stateHoverAnimation);
+            if (t.labelBacking) {
+                var n = {};
+                if (this.options.stateSpecificLabelBackingStyles[t.name]) {
+                    e.extend(n, this.options.labelBackingStyles, this.options.stateSpecificLabelBackingStyles[t.name])
+                } else {
+                    n = this.options.labelBackingStyles
+                }
+                t.labelBacking.animate(n, this.options.stateHoverAnimation)
+            }
+        },
+        _onClick: function(e) {
+            var t = this._getStateFromEvent(e);
+            if (!t.hitArea) {
+                return
+            }
+            return !this._triggerEvent("click", e, t)
+        },
+        _onMouseOver: function(e) {
+            var t = this._getStateFromEvent(e);
+            if (!t.hitArea) {
+                return
+            }
+            return !this._triggerEvent("mouseover", e, t)
+        },
+        _defaultMouseOverAction: function(t) {
+            this.bringShapeToFront(t.shape);
+            this.paper.safari();
+            var n = {};
+            if (this.options.stateSpecificHoverStyles[t.name]) {
+                e.extend(n, this.options.stateHoverStyles, this.options.stateSpecificHoverStyles[t.name])
+            } else {
+                n = this.options.stateHoverStyles
+            }
+            t.shape.animate(n, this.options.stateHoverAnimation);
+            if (t.labelBacking) {
+                var n = {};
+                if (this.options.stateSpecificLabelBackingHoverStyles[t.name]) {
+                    e.extend(n, this.options.labelBackingHoverStyles, this.options.stateSpecificLabelBackingHoverStyles[t.name])
+                } else {
+                    n = this.options.labelBackingHoverStyles
+                }
+                t.labelBacking.animate(n, this.options.stateHoverAnimation)
+            }
+        },
+        _triggerEvent: function(t, n, r) {
+            var i = r.name;
+            var s = false;
+            var o = e.Event("usmap" + t + i);
+            o.originalEvent = n;
+            if (this.options[t + "State"][i]) {
+                s = this.options[t + "State"][i](o, r) === false
+            }
+            if (o.isPropagationStopped()) {
+                this.element.trigger(o, [r]);
+                s = s || o.isDefaultPrevented()
+            }
+            if (!o.isPropagationStopped()) {
+                var u = e.Event("usmap" + t);
+                u.originalEvent = n;
+                if (this.options[t]) {
+                    s = this.options[t](u, r) === false || s
+                }
+                if (!u.isPropagationStopped()) {
+                    this.element.trigger(u, [r]);
+                    s = s || u.isDefaultPrevented()
+                }
+            }
+            if (!s) {
+                switch (t) {
+                case "mouseover":
+                    this._defaultMouseOverAction(r);
+                    break;
+                case "mouseout":
+                    this._defaultMouseOutAction(r);
+                    break
+                }
+            }
+            return !s
+        },
+        trigger: function(e, t, n) {
+            t = t.replace("usmap", "");
+            e = e.toUpperCase();
+            var r = this._getState(e);
+            this._triggerEvent(t, n, r)
+        },
+        bringShapeToFront: function(e) {
+            if (this.topShape) {
+                e.insertAfter(this.topShape)
+            }
+            this.topShape = e
+        }
+    };
+    var c = [];
+    s(e, "usmap", l, c)
+})(jQuery, document, window, Raphael)
+
+const style = document.createElement('style');
+style.textContent = `
+#map_container {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url('https://i.imgur.com/VfgBCCW.png');
+}
+`;
+
+document.head.append(style);
+
+document.getElementById("music_player").innerHTML = "<button onclick='music_play()'>Play Soundtrack</button>     <button onclick='music_pause()'>Pause</button><br><div style='font-size:0.75em'><input type='radio' name='jukebox' value='song0' onchange='jukebox0()'>Digger Anthems (Default)<input type='radio' name='jukebox' value='song1' onchange='jukebox1()'>HHR1<input type='radio' name='jukebox' value='song1' onchange='jukebox2()'>HHR NEWS</div><audio id='campaigntrailmusic' loop='true' style='display:none' src='' autoplay='false'></audio>"
+
+music_play = function() {
+    document.getElementById("campaigntrailmusic").play()
+}
+
+music_pause = function() {
+    document.getElementById("campaigntrailmusic").pause()
+}
+
+jukebox0 = function() {
+    campaignTrail_temp.musicSrc = "https://cdn.discordapp.com/attachments/340162562567962624/1144641162750197902/Diggeranthems_1.mp3"
+    document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
+}
+jukebox1 = function() {
+    campaignTrail_temp.musicSrc = "https://cdn.discordapp.com/attachments/340162562567962624/1128409967800627340/HHR1.mp3"
+    document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
+}
+jukebox2 = function() {
+    campaignTrail_temp.musicSrc = "https://cdn.discordapp.com/attachments/340162562567962624/1127568027269996555/HHRADIO_24_NEWS.mp3"
+    document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
+}
+
+ campaignTrail_temp.candidate_json = JSON.parse("[{\"model\": \"campaign_trail.candidate\", \"pk\": 131, \"fields\": {\"first_name\": \"\", \"last_name\": \"Winstanley\", \"election\": 13, \"party\": \"Diggers\", \"state\": \"Northumbria\", \"priority\": 1, \"description\": \"Financially ruined and forced into living a precarious life in the workshops of East London Gerrard Winstanley devloped a hatred towards the way of life he had experiencied in the city. Along with his good friend, the radical agitator William Everard he dreamed of escaping and building a community that abided to Reason and disrupted the forces of Norman power. <p>Now leading a colony 60 strong the community of 'True Levellers' have succeeded in working the land and drawing the ire of the local gentry and clergy. as the commune has developed Winstanley has taken to writing pamplhets that declare his views on Englands state and hopes that they will draw in thousands to his commune and encourage others to be setup across England's Green and Pleasant Land.However, to survive Winstanley must first guide the commune through attacks from fierce mobs, parlimentary suspicions and disparaging poetry.\", \"color_hex\": \"#bf1b1b\", \"secondary_color_hex\": \"#ffbfbf\", \"is_active\": 1, \"image_url\": \"https://i.imgur.com/yfG6pcV.png\", \"electoral_victory_message\": \"<h3>Congratulations! You have won the 1844 Election</h3><p>Your first order of business will be to confirm the annexation of Texas. More generally you can fight for the expansion of the United States in line with the ideals of \\\"Manifest Destiny\\\". With a Democratic majority in Congress, you will have wide latitude to implement your program, after four years of Tyler's paralysis. Best wishes for your term in office.</p>\", \"electoral_loss_message\": \"<h3>Sorry. You have lost the 1844 Election</h3><p>President Clay is sure to obstruct the annexation of Texas. Hopefully a new President can bring this to a better conclusion in four years. In the meantime, your voice may hold some influence, in an advisory capacity, with the Democratic majority in Congress. It is unlikely, however, that you will be nominated for President over the likes of Lewis Cass, James Buchanan, or others in 1848.</p>\", \"no_electoral_majority_message\": \"<h3>Wow. No candidate has achieved a majority in the Electoral College</h3><p>This is surely an unusual situation, given that no candidate besides yourself and Clay seemed poised to win an electoral vote. Fortunately, the Democrats have won a majority in the House and seem likely to confirm you as the ultimate winner. Best wishes for your term in office.</p>\", \"description_as_running_mate\": \"'\", \"candidate_score\": 1.0}}, {\"model\": \"campaign_trail.candidate\", \"pk\": 132, \"fields\": {\"first_name\": \"\", \"last_name\": \"Lambert\", \"election\": 13, \"party\": \"Independent Roundhead\", \"state\": \"Kentucky\", \"priority\": 2, \"description\": \"<p>Henry Clay runs in a Presidential election for the third time, and begins as the favorite against Polk. He must quickly define a position on Texas. It will be difficult to do so without alienating some bloc of the Whigs.</p><p>Clay would prefer to keep slavery and expansion on the back-burner, and advance his own issues like tariffs, internal improvements, and a national currency. Can he find redemption from his political defeats to Andrew Jackson, and finally break into the White House?</p>\", \"color_hex\": \"#eded0c\", \"secondary_color_hex\": \"#f7f7b7\", \"is_active\": 0, \"image_url\": \"/static/images/henry-clay-1844.jpg\", \"electoral_victory_message\": \"<h3>Congratulations! You have won the 1844 Election</h3><p>Your first order of business will be to block the annexation of Texas, and hopefully to end the further discussion of this issue. Then you can concentrate on undoing the damage that Andrew Jackson and his followers have inflicted on the American System. Unfortunately, it appears that you will have to deal with a Democratic majority in Congress. Best wishes for these next four years.</p>\", \"electoral_loss_message\": \"<h3>Sorry. You have lost the 1844 Election</h3><p>President Polk is sure to go through with the annexation of Texas. You can only hope it doesn't lead to war. Even if the U.S. is successful in the short-term, the acquisition of such territory is sure to reopen the slavery question in a way which may hurt the Whigs. As for your own fortunes, you have likely missed your last chance to become President. How will your legacy be remembered?</p>\", \"no_electoral_majority_message\": \"<h3>Wow. No candidate has achieved a majority in the Electoral College</h3><p>This is sure an unusual situation, given that no candidate besides yourself and Polk seemed poised to win an electoral vote. Unfortunately, the Democrats have won a majority in the House and seem likely to confirm James K. Polk as the ultimate winner. How will your legacy be remembered?</p>\", \"description_as_running_mate\": \"'\", \"candidate_score\": 1.0}}, {\"model\": \"campaign_trail.candidate\", \"pk\": 133, \"fields\": {\"first_name\": \"\", \"last_name\": \"Lilburne\", \"election\": 13, \"party\": \"Levellers\", \"state\": \"Michigan\", \"priority\": 3, \"description\": \"'\", \"color_hex\": \"#19b514\", \"secondary_color_hex\": \"#c5f5c4\", \"is_active\": 0, \"image_url\": \"'\", \"electoral_victory_message\": \"'\", \"electoral_loss_message\": \"'\", \"no_electoral_majority_message\": \"'\", \"description_as_running_mate\": \"'\", \"candidate_score\": 1.0}}, {\"model\": \"campaign_trail.candidate\", \"pk\": 134, \"fields\": {\"first_name\": \"Oliver\", \"last_name\": \"Cromwell\", \"election\": 13, \"party\": \"Grandee Roundhead\", \"state\": \"Virginia\", \"priority\": 3, \"description\": \"The Goat?\", \"color_hex\": \"#1e30b3\", \"secondary_color_hex\": \"#d6dbff\", \"is_active\": 1, \"image_url\": \"'\", \"electoral_victory_message\": \"'\", \"electoral_loss_message\": \"'\", \"no_electoral_majority_message\": \"'\", \"description_as_running_mate\": \"'\", \"candidate_score\": 1.0}}, {\"model\": \"campaign_trail.candidate\", \"pk\": 135, \"fields\": {\"first_name\": \"Barnabas\", \"last_name\": \"\", \"election\": 13, \"party\": \"Unclear\", \"state\": \"Cyprus\", \"priority\": 5, \"description\": \"'\", \"color_hex\": \"#0000FF\", \"secondary_color_hex\": \"#90C0FF\", \"is_active\": 0, \"image_url\": \"https://i.imgur.com/bTQPBZ3.png\", \"electoral_victory_message\": \"'\", \"electoral_loss_message\": \"'\", \"no_electoral_majority_message\": \"'\", \"description_as_running_mate\": \"<p><i><q>They gave to Barnabas and me the right hand of fellowship, agreeing that we should go to the gentiles and they to the circumcised.</q></i></p>\", \"candidate_score\": 0.0}}]");
+ campaignTrail_temp.candidate_image_url = 'https://i.imgur.com/yfG6pcV.png';
+ campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/1MjHmdR.png';
+ campaignTrail_temp.candidate_last_name = 'Gerrard';
+ campaignTrail_temp.running_mate_last_name = 'Winstanley';
+ campaignTrail_temp.running_mate_state_id = '233';
+ campaignTrail_temp.player_answers = [];
+ campaignTrail_temp.player_visits = [];
+ campaignTrail_temp.answer_feedback_flg = 1;
+ campaignTrail_temp.game_start_logging_id = '3662918';
